@@ -31,7 +31,13 @@ Run the following command to build and run the application:
     ```bash
     mvn package
     java -jar target/comparison-test.jar
-  
+
+## Health Checks using Spring Actuator
+* With the Spring Boot application running, navigate to the following URL in your web browser:
+    ```bash
+    http://localhost:8080/actuator/health
+This endpoint provides information about the health status of the application and its dependencies.
+
 ## Testing the API
 
 ### Option 1: Using OpenAPI
