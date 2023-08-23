@@ -31,13 +31,19 @@ Run the following command to build and run the application:
     ```bash
     mvn package
     java -jar target/comparison-test.jar
-  
+
+## Health Checks using Spring Actuator
+* With the Spring Boot application running, navigate to the following URL in your web browser:
+    ```bash
+    http://localhost:8080/actuator/health
+This endpoint provides information about the health status of the application and its dependencies.
+
 ## Testing the API
 
 ### Option 1: Using OpenAPI
 * After starting the Spring Boot application, open your web browser and go to:
     ```bash
-    http://localhost:8080/swagger-ui.html
+    http://localhost:8080/swagger-ui/index.htm
 This will open the Swagger UI documentation, allowing you to test the API /transactions endpoint interactively.
 
 ### Option 2: Using Kafka Topic
